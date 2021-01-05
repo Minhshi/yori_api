@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe Recipe, type: :model do
+describe Recipe, type: :model do
   describe "#validations" do
     it "should be invalid if name is not present" do
       recipe = build :recipe, name: nil
